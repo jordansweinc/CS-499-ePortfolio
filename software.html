@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineering – Jordan Swe ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Software Design &amp; Engineering</h1>
+    <p>Enhancement One</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="software.html">Software Engineering</a>
+    <a href="algorithms.html">Algorithms &amp; Data Structures</a>
+    <a href="databases.html">Databases</a>
+  </nav>
+  <main>
+    <h2>Artifact Description</h2>
+    <p>This artifact is an open‑source web application called <strong>MovieGeek</strong> implemented with the Django framework. Originally the project contained tightly coupled view logic, hard‑coded configuration values, minimal error handling, and no testing or deployment pipeline. It was created in 2017 as part of the Practical Recommender Systems project. For this enhancement I refactored the code to introduce a service layer, secure configuration, caching, logging, and a continuous integration workflow.</p>
+
+    <h2>Key Improvements</h2>
+    <ul>
+      <li>Introduced a dedicated <code>services</code> package to encapsulate business logic, decoupling it from Django views and promoting testability.</li>
+      <li>Secured configuration by loading secret keys and database credentials from environment variables instead of hard‑coding them in source files.</li>
+      <li>Added caching using Django’s caching framework to store expensive computations and reduce page load times.</li>
+      <li>Implemented structured logging and error handling throughout the service layer to improve observability and reliability.</li>
+      <li>Configured a basic continuous integration pipeline that runs unit tests and linting on each commit.</li>
+    </ul>
+
+    <h2>How This Demonstrates My Skills</h2>
+    <p>This enhancement showcases my ability to design maintainable software architectures. Refactoring to a service layer demonstrates an understanding of separation of concerns and modularity. The secure configuration and logging illustrate a security‑conscious mindset. Adding caching and a CI pipeline reflects competence with performance optimisation and industry best practices. Altogether, the enhanced artifact embodies professional software engineering principles.</p>
+
+    <h2>Downloads</h2>
+    <p>You can download the enhanced codebase and supporting documents:</p>
+    <ul>
+      <li><a href="../artifacts/enhanced/moviegeek-master">Enhanced MovieGeek Source Code (directory)</a></li>
+      <li><a href="../artifacts/original/moviegeek-master.zip">Original MovieGeek Source Code (zip)</a></li>
+      <li><a href="../narratives/Milestone_Two_Enhanced_Narrative_with_FINAL_Diagrams.docx">Narrative – Enhancement One (docx)</a></li>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jordan Swe. All rights reserved.</p>
+  </footer>
+</body>
+</html>

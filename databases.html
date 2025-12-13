@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databases – Jordan Swe ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Databases</h1>
+    <p>Enhancement Three</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="software.html">Software Engineering</a>
+    <a href="algorithms.html">Algorithms &amp; Data Structures</a>
+    <a href="databases.html">Databases</a>
+  </nav>
+  <main>
+    <h2>Artifact Description</h2>
+    <p>The third enhancement addresses the data storage layer of the MovieGeek application. The original database schema relied solely on the default Django indexes and stored configuration settings in the project files. I improved data integrity and query performance by adding composite indexes, creating a recommendation cache table, and refactoring the database configuration to load credentials from environment variables.</p>
+
+    <h2>Key Improvements</h2>
+    <ul>
+      <li><strong>Composite index:</strong> Added a composite index on the <code>user_id</code> and <code>movie_id</code> fields of the ratings table to speed up lookups for user‑movie pairs.</li>
+      <li><strong>Recommendation cache:</strong> Defined a new model for storing precomputed recommendation lists keyed by user. This enables persistent caching across sessions and reduces recomputation.</li>
+      <li><strong>Environment‑based configuration:</strong> Removed hard‑coded database credentials from <code>settings.py</code> and replaced them with environment variables, improving security and portability.</li>
+      <li><strong>Validation:</strong> Added validators on the rating field to enforce that ratings are between 0 and 5.</li>
+    </ul>
+
+    <h2>How This Demonstrates My Skills</h2>
+    <p>These changes highlight my understanding of relational database design and performance tuning. Creating appropriate indexes and cache tables shows that I can optimise data access patterns. Moving configuration to environment variables demonstrates adherence to security best practices. The improved schema also lays the groundwork for future scaling, as it allows for separate caching and analytics stores.</p>
+
+    <h2>Downloads</h2>
+    <p>You can download the enhanced codebase and supporting documents:</p>
+    <ul>
+      <li><a href="../artifacts/enhanced/moviegeek-master/analytics/models.py">Enhanced Analytics Models (models.py)</a></li>
+      <li><a href="../artifacts/enhanced/moviegeek-master/recommender/models.py">Enhanced Recommender Models (models.py)</a></li>
+      <li><a href="../artifacts/enhanced/moviegeek-master/prs_project/settings.py">Enhanced Settings (settings.py)</a></li>
+      <li><a href="../artifacts/original/moviegeek-master.zip">Original MovieGeek Source Code (zip)</a></li>
+      <li><a href="../narratives/Milestone_Four_Enhanced_Narrative (1).docx">Narrative – Enhancement Three (docx)</a></li>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jordan Swe. All rights reserved.</p>
+  </footer>
+</body>
+</html>

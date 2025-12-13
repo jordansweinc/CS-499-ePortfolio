@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithms &amp; Data Structures – Jordan Swe ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Algorithms &amp; Data Structures</h1>
+    <p>Enhancement Two</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="software.html">Software Engineering</a>
+    <a href="algorithms.html">Algorithms &amp; Data Structures</a>
+    <a href="databases.html">Databases</a>
+  </nav>
+  <main>
+    <h2>Artifact Description</h2>
+    <p>For the second enhancement I focused on the recommendation algorithms within the MovieGeek project. The original item‑based neighbourhood recommender re‑computed similarity scores for each request and did not handle new users or sparse data gracefully. I enhanced the algorithm by implementing an in‑memory cache of computed similarities, introducing a cold‑start fallback strategy, and adding defensive programming safeguards.</p>
+
+    <h2>Key Improvements</h2>
+    <ul>
+      <li><strong>Caching:</strong> Added a dictionary‑based cache keyed on user ID and item ID to store previously computed similarity scores. This reduces the runtime complexity of repeated queries from O(n²) to O(n).</li>
+      <li><strong>Cold‑start fallback:</strong> Implemented a fallback recommendation method that returns popular items when there is insufficient user history. This ensures meaningful recommendations for new users.</li>
+      <li><strong>Defensive coding:</strong> Added validation checks to prevent division by zero and handle missing ratings. Included comprehensive docstrings describing algorithm parameters and return values.</li>
+    </ul>
+
+    <h2>How This Demonstrates My Skills</h2>
+    <p>This enhancement reflects my ability to analyse algorithmic complexity and optimise data structures for performance. By introducing caching and conditional logic, I demonstrated mastery of time–space trade‑offs and robust algorithm design. Documenting the functions and adding unit tests shows attention to maintainability and correctness.</p>
+
+    <h2>Downloads</h2>
+    <p>You can download the enhanced codebase and supporting documents:</p>
+    <ul>
+      <li><a href="../artifacts/enhanced/moviegeek-master/recs/neighborhood_based_recommender.py">Enhanced Recommender Source File</a></li>
+      <li><a href="../artifacts/original/moviegeek-master.zip">Original MovieGeek Source Code (zip)</a></li>
+      <li><a href="../narratives/Milestone_Three_Enhanced_Narrative_with_Diagrams (3).docx">Narrative – Enhancement Two (docx)</a></li>
+    </ul>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Jordan Swe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
